@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ednut ProfileCard</title>
+    <link href="style.css" />
+  </head>
+  <body>
+    <!-- Section container  -->
+    <section>
+      <article data-testid="test-profile-card">
+        <div class="avater-header-container">
+          <div class="avatar-container">
+            <figure>
+              <img
+                data-testid="test-user-avatar"
+                src="images/Profile.jpeg"
+                alt="Ednut Profile"
+              />
+            </figure>
+          </div>
+          <div class="header-timestap-container">
+            <h2 data-testid="test-user-name">Alex Johnson</h2>
+            <div class="time-display">
+              Current time: <span data-testid="test-user-time">0</span> ms
+            </div>
+          </div>
+        </div>
+
+        <!-- Bio section -->
+        <section class="bio-section">
+          <p data-testid="test-user-bio">
+            I build responsive, high-performing web applications that deliver
+            smooth user experiences. Passionate about crafting clean interfaces,
+            solving real-world problems, and turning ideas into functional
+            digital products.
+          </p>
+        </section>
+
+        <!-- Social section -->
+        <section class="social-section">
+          <h3>Connect</h3>
+          <nav
+            data-testid="test-user-social-links"
+            aria-label="Social media links"
+          >
+            <ul>
+              <li>
+                <a
+                  href="https://odusamiportfolio.framer.website/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-portfolio"
+                >
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/Odusami"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-github"
+                >
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/1zh0NZvDrTyZKgVCEc8O3ZjrkWYgc99FK/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-resume"
+                >
+                  Resume
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <!-- Likes and Dislikes -->
+        <section class="Likes-Dislikes-container">
+          <section class="hobbies-section">
+            <h3>Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+              <li>Hiking and outdoor adventures</li>
+              <li>Reading science fiction</li>
+              <li>Cooking and trying new recipes</li>
+              <li>Photography</li>
+              <li>Playing guitar</li>
+            </ul>
+          </section>
+
+          <section class="dislikes-section">
+            <h3>Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+              <li>Loud chewing noises</li>
+              <li>Traffic jams</li>
+              <li>Cold coffee</li>
+              <li>Broken website links</li>
+              <li>Early mornings</li>
+            </ul>
+          </section>
+        </section>
+      </article>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

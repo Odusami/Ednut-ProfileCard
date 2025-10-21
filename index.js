@@ -1,14 +1,9 @@
-// Update ALL time elements (fix for multiple cards)
+// Update time in milliseconds
 function updateTime() {
-  const timeElements = document.querySelectorAll(
-    '[data-testid="test-user-time"]'
-  );
-  const currentTime = Date.now();
-
-  // Update each time element
-  timeElements.forEach((element) => {
-    element.textContent = currentTime;
-  });
+  const timeElement = document.querySelector('[data-testid="test-user-time"]');
+  if (timeElement) {
+    timeElement.textContent = Date.now();
+  }
 }
 
 // Initial time update

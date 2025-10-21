@@ -21,6 +21,9 @@ body {
   color: var(--text-color);
   margin: 0;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 500px) {
   body {
@@ -29,11 +32,12 @@ body {
 }
 
 .Parent-grid {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  row-gap: 50px;
-  column-gap: 30px;
+  /* display: grid;
+  justify-items: center; */
+
+  /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
+  /* row-gap: 50px; */
+  /* column-gap: 30px; */
 }
 @media (max-width: 576px) {
   .Parent-grid {
@@ -46,7 +50,7 @@ article[data-testid="test-profile-card"] {
   border-radius: var(--border-radius);
   box-shadow: var(--card-shadow);
   overflow: hidden;
-  max-width: 500px;
+  max-width: 800px;
   width: 100%;
   transition: var(--transition);
 }

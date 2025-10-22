@@ -4,11 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ednut ProfileCard</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
+    <!-- Nav -->
+    <header id="main-nav-container">
+      <nav data-testid="test-main-nav" aria-label="Main navigation">
+        <a href="index.html" class="logo">Ednut</a>
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <!-- Section container  -->
-    <section class="Parent-grid">
+    <section id="home" class="Parent-grid page active">
       <!-- Card -->
       <article data-testid="test-profile-card">
         <div class="avater-header-container">
@@ -16,7 +34,7 @@
             <figure>
               <img
                 data-testid="test-user-avatar"
-                src="images/Profile.jpeg"
+                src="/images/Profile.jpeg"
                 alt="Ednut Profile"
               />
             </figure>
@@ -106,9 +124,8 @@
           </section>
         </div>
       </article>
-  
     </section>
-
-    <script src="index.js"></script>
+    <script src="/js/nav.js"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>

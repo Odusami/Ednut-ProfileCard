@@ -6,16 +6,28 @@ This project demonstrates clean frontend structure, semantic markup, and testabl
 ---
 
 ## 🚀 Live Demo
-👉 [View on GitHub Pages](https://odusami.github.io/Ednut-ProfileCard/) 
+
+👉 [View on GitHub Pages](https://odusami.github.io/Ednut-ProfileCard/)
 
 ---
 
 ## 🧠 Features
-- Semantic HTML structure  
-- Accessible and responsive layout  
-- Clean and modern CSS styling  
-- Interactive elements
-- Includes `data-testid` attributes for easy automated testing  
+
+- Multi-page structure (Home, About, Contact Us)
+- Contact Form with validation and success feedback
+- About page with reflective sections
+- Semantic and accessible HTML5 structure
+- Fully responsive layout (mobile, tablet, desktop)
+- Includes data-testid attributes for easy automated testing
+- Keyboard navigable and ARIA-compliant
+
+---
+
+## 🧩 Pages Overview
+
+- home page
+- about page
+- contact page
 
 ---
 
@@ -24,5 +36,6 @@ This project demonstrates clean frontend structure, semantic markup, and testabl
 Follow these steps to set up and run this project on your local machine:
 
 ### 1. Clone the Repository
+
 - git clone https://github.com/Odusami/Ednut-ProfileCard.git
 - Run live Sever

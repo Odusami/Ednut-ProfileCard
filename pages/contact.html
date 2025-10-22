@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Nav -->
+    <header id="main-nav-container">
+      <nav data-testid="test-main-nav" aria-label="Main navigation">
+        <a href="index.html" class="logo">Ednut</a>
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contact" class="page" data-testid="test-contact-page">
+      <div class="contact-form-container">
+        <section class="contact-social">
+          <div class="avatar-container">
+            <figure>
+              <img
+                data-testid="test-user-avatar"
+                src="/images/Profile.jpeg"
+                alt="Ednut Profile"
+              />
+            </figure>
+          </div>
+
+          <nav
+            data-testid="test-user-social-links"
+            aria-label="Social media links"
+            class="contact-links"
+          >
+            <ul>
+              <li>
+                <a
+                  href="https://odusamiportfolio.framer.website/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-portfolio"
+                >
+                  <i class="fa-solid fa-blog"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/Odusami"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-github"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/1zh0NZvDrTyZKgVCEc8O3ZjrkWYgc99FK/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-resume"
+                >
+                  <i class="fa-solid fa-file"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <section class="contact-form-body">
+          <h1>Get in touch</h1>
+          <h4>You can reach me anytime</h4>
+          <div class="success-message" data-testid="test-contact-success">
+            Message sent successfully!
+          </div>
+
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input
+                type="text"
+                id="full-name"
+                class="form-control"
+                data-testid="test-contact-name"
+                aria-describedby="name-error"
+                required
+              />
+              <div
+                class="error-message"
+                id="name-error"
+                data-testid="test-contact-error-name"
+              >
+                Please enter your full name.
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                data-testid="test-contact-email"
+                aria-describedby="email-error"
+                required
+              />
+              <div
+                class="error-message"
+                id="email-error"
+                data-testid="test-contact-error-email"
+              >
+                Please enter a valid email address.
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                class="form-control"
+                data-testid="test-contact-subject"
+                aria-describedby="subject-error"
+                required
+              />
+              <div
+                class="error-message"
+                id="subject-error"
+                data-testid="test-contact-error-subject"
+              >
+                Please enter a subject for your message.
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                class="form-control"
+                data-testid="test-contact-message"
+                aria-describedby="message-error"
+                required
+              ></textarea>
+              <div
+                class="error-message"
+                id="message-error"
+                data-testid="test-contact-error-message"
+              >
+                Please enter a message of at least 10 characters.
+              </div>
+            </div>
+
+            <button type="submit" class="btn" data-testid="test-contact-submit">
+              Send Message
+            </button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <script src="/js/nav.js"></script>
+    <script src="/js/contact.js"></script>
+  </body>
+</html>

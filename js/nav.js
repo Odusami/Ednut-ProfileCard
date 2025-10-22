@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+
   //  Load the navigation HTML
-  fetch("nav.html")
+  fetch(`${pathPrefix}pages/nav.html`)
     .then(response => response.text())
     .then(data => {
       document.getElementById("main-nav-container").innerHTML = data;

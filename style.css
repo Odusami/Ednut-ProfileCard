@@ -64,7 +64,6 @@ nav[data-testid="test-main-nav"] {
   color: var(--primary-color);
 }
 
-
 .nav-link.active {
   background-color: var(--primary-color);
   color: white;
@@ -76,6 +75,7 @@ nav[data-testid="test-main-nav"] {
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
+  z-index: 100;
 }
 
 .hamburger span {
@@ -100,37 +100,31 @@ nav[data-testid="test-main-nav"] {
     text-align: left;
     padding: 1.5rem 2rem;
     gap: 1rem;
-    
+
     /* Animation setup */
     max-height: 0;
     opacity: 0;
     overflow: hidden;
     transform: translateY(-20px);
     pointer-events: none;
-    transition:
-      max-height 0.4s ease,
-      opacity 0.4s ease,
-      transform 0.4s ease;
+    transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
   }
-    
-  }
+}
 
-  .nav-links.active {
-     max-height: fit-content; 
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-  }
-  .nav-link{
-    display: block;         
-    width: 100%;             
-    text-decoration: none;   
-    color: var(--text-color);
-    transition: all 0.3s ease;
-
-  }
-
-
+.nav-links.active {
+  /* max-height: fit-content;  */
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.nav-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -351,12 +345,11 @@ button:focus {
 /* about style */
 main[data-testid="test-about-page"] {
   max-width: 800px;
-  
 }
 @media (max-width: 500px) {
   main[data-testid="test-about-page"] {
-   margin-top: 1rem;
-   margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -414,8 +407,8 @@ main[data-testid="test-about-page"] {
 }
 @media (max-width: 500px) {
   .contact-form-container {
-   margin-top: 1rem;
-   margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 

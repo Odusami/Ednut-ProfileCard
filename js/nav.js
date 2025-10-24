@@ -1,13 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-
   //  Load the navigation HTML
-  fetch(`${pathPrefix}pages/nav.html`)
-    .then(response => response.text())
-    .then(data => {
+  fetch(`nav.html`)
+    .then((response) => response.text())
+    .then((data) => {
       document.getElementById("main-nav-container").innerHTML = data;
       initNav(); // Initialize nav behavior after it’s loaded
     })
-    .catch(err => console.error("Failed to load nav:", err));
+    .catch((err) => console.error("Failed to load nav:", err));
 });
 
 function initNav() {
@@ -20,9 +19,8 @@ function initNav() {
     navLinks.classList.toggle("active");
   });
 
-
   // Close menu when clicking a nav link
-  document.querySelectorAll(".nav-link").forEach(link => {
+  document.querySelectorAll(".nav-link").forEach((link) => {
     if (link.getAttribute("href") === currentPage) {
       link.classList.add("active");
     }

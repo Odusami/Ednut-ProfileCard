@@ -7,7 +7,7 @@ This project demonstrates clean frontend structure, semantic markup, and testabl
 
 ## 🚀 Live Demo
 
-👉 [View on GitHub Pages](https://odusami.github.io/Ednut-ProfileCard/index.html)
+👉 [View on GitHub Pages](https://odusami.github.io/Ednut-ProfileCard/pages/home.html)
 
 ---
 
